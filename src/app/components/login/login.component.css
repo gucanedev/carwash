@@ -1,0 +1,30 @@
+.login-form {
+    padding: 4rem 2rem;
+    background-color: grey;
+
+
+}
+
+mat-card {
+    max-width: 400px;
+    margin: 2rem auto;
+    text-align: center;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.full-width-input,
+button {
+    width: 100%;
+}
+
+.separator {
+    margin-bottom: 2rem;
+}
+
+/* .market {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+} */

@@ -1,0 +1,21 @@
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="s">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button *ngIf="rol==='admin'" mat-menu-item routerLink="/">
+      <mat-icon>dialpad</mat-icon>
+      <span >Lista De Espera</span>
+    </button>
+    <button *ngIf="rol==='admin'" mat-menu-item  >
+      <mat-icon>point_of_sale</mat-icon>
+      <span routerLink="/login">Ventas</span>
+    </button>
+    <button mat-menu-item  >
+      <mat-icon>point_of_sale</mat-icon>
+      <span routerLink="/login">publico</span>
+    </button>
+    <button *ngIf="login" type="submit" mat-menu-item (click)="cerrarSession()">
+      <mat-icon>logout</mat-icon>
+      <span >Cerrar Sesion</span>
+    </button>
+  </mat-menu>
