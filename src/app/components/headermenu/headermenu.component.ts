@@ -19,15 +19,18 @@ export class HeadermenuComponent {
   constructor(private _autService: AuthService,
     private _bdFire: BdfService,
     private _router: Router) {
-    this._autService.stateUser().subscribe(res => {
-      if (res) {
-        this.login = true;
-        this.getDatosUser(res.uid);
-      } else {
-        this.login = false;
-        this._router.navigate(['/login']);
-      }
-    })
+
+    //Valida el login
+    // this._autService.stateUser().subscribe(res => {
+    //   if (res) {
+    //     this.login = true;
+    //     this.getDatosUser(res.uid);
+    //   } else {
+    //     this.login = false;
+    //     this._router.navigate(['/login']);
+    //   }
+    // })
+
   }
 
   async cerrarSession() {

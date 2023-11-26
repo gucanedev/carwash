@@ -1,6 +1,6 @@
 .login-form {
     padding: 4rem 2rem;
-    background-color: grey;
+
 
 
 }
@@ -20,6 +20,40 @@ button {
 
 .separator {
     margin-bottom: 2rem;
+}
+
+
+.example-h2 {
+    margin: 10px;
+}
+
+.example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.example-margin {
+    margin: 0 10px;
+}
+
+.example-card {
+    margin-bottom: 10px;
+}
+
+.centered-container {
+    margin-top: 50px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.error-message {
+    margin-top: 50px;
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 /* .market {

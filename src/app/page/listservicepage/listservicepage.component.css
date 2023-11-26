@@ -1,0 +1,14 @@
+.letra {
+    font-family: 'Tangerine', serif;
+    font-style: oblique;
+    margin-left: 10px;
+    font-size: larger;
+    /* font-size: 48px; */
+    font-weight: bold;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.divservice {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}

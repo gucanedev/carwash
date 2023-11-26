@@ -16,5 +16,11 @@ export interface UserResponse {
     message: string;
     token: string;
     userId: string,
-    role: string
+    role: string,
+    isSuccess: boolean
+}
+
+export interface userLogin {
+    Email: string,
+    Password: string
 }

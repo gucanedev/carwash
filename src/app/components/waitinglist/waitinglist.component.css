@@ -1,0 +1,22 @@
+.divtable {
+    width: 95%;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+mat-header-cell {
+    background-color: pink !important;
+}
+
+.icon-display {
+    transform: scale(2);
+}
+
+.float {
+    position: fixed;
+    bottom: 40px;
+    right: 20%;
+}

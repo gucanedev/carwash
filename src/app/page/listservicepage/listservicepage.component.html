@@ -1,0 +1,66 @@
+
+<label class="letra"  >Cliente:  </label>
+<mat-chip-option color="accent" >Gustavo Carreño Nevarez
+</mat-chip-option>
+<br>
+<label class="letra"  >Carro : </label>
+<mat-chip-option color="primary" >Honda Civic 2008</mat-chip-option>
+
+<div class="divservice">
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!-- Checkbox Column -->
+    <ng-container matColumnDef="select">
+      <th mat-header-cell *matHeaderCellDef style="width: 80px;">
+        <!-- <mat-checkbox (change)="$event ? toggleAllRows() : null"
+                      [checked]="selection.hasValue() && isAllSelected()"
+                      [indeterminate]="selection.hasValue() && !isAllSelected()"
+                      [aria-label]="checkboxLabel()">
+        </mat-checkbox> -->
+      </th>
+      <td mat-cell *matCellDef="let row">
+        <mat-checkbox (click)="$event.stopPropagation()"
+                      (change)="$event ? onChange(row) : null"
+                      [checked]="isChecked(row)"
+                     
+                      >
+        </mat-checkbox>
+      </td>
+    </ng-container>
+  
+   
+    <ng-container matColumnDef="uuid">
+      <th mat-header-cell *matHeaderCellDef style="width: 80px;">  Id </th>
+      <td mat-cell *matCellDef="let element"> {{element.uuid}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="service">
+      <th mat-header-cell *matHeaderCellDef> Servicio </th>
+      <td mat-cell *matCellDef="let element"> {{element.service}} </td>
+    </ng-container>
+  
+  
+    <!-- <ng-container matColumnDef="uuid">
+      <th mat-header-cell *matHeaderCellDef> Carro </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}}- {{element.uuid}} </td>
+    </ng-container> 
+     (click)="onChange(row)"
+  -->
+  
+  
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+     
+        >
+    </tr>
+  </table>
+</div>
+  <mat-divider></mat-divider>
+
+  <div  align="end" style="margin-right: 10px;">
+    <button mat-raised-button color="primary" (click)="saveStep()" >Hacer</button>
+  </div>
+ 

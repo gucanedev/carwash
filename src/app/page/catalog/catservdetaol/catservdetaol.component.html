@@ -1,0 +1,32 @@
+<div class="containerform">
+    <header>Servicios</header>
+    <form [formGroup]="serviceform" >
+        <mat-form-field appearance="outline" class="input-fieldc">
+            <mat-label>Descripcion</mat-label>
+            <input matInput placeholder="Servicio"
+            formControlName="descripcion"
+            [(ngModel)]="descripcionValue"
+            required
+            >
+            <!-- <mat-error *ngIf="username.invalid">{{getErrorMessage()}}</mat-error>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+             -->
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="input-fieldc" floatLabel="always">
+            <mat-label>Precio</mat-label>
+            <input matInput type="number" class="example-right-align" placeholder="0" 
+            formControlName="precio"
+            [(ngModel)]="precioValue"
+            required
+            >
+            <span matTextPrefix>$&nbsp;</span>
+            <span matTextSuffix>.00</span>
+          </mat-form-field>
+    </form>
+ 
+      
+    <div  align="end" style="margin-right: 10px;">
+      <button mat-raised-button color="secundary" (click)="update()" >Modificar</button>
+        <button mat-raised-button color="primary" (click)="save()" >Guardar</button>
+      </div>
+</div>
